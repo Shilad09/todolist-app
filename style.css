@@ -1,0 +1,213 @@
+body, html{
+  height: 100%;
+}
+
+body{
+  background-image: url("bg-home.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#title-bg{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  color: white;
+}
+.blockquote-footer{
+  color: white;
+}
+#btn{
+  position: absolute;
+  top: 70%;
+  left: 40%;
+}
+#alert-msg{
+  z-index: 100;
+}
+#modal-box, #modal-box-2, #modal-box-3, #modal-box-4, #modal-box-5, #modal-box-6{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#modal-box-4, #modal-box-5, #modal-box-6{
+  z-index: 100;
+}
+#internal-box, #internal-box-2, #internal-box-3{
+  background-color: white;
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  width: 70%;
+  height: 60%;
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#internal-box-4, #internal-box-5{
+  background-color: white;
+  position: absolute;
+  top: 25%;
+  left: 23%;
+  width: 50%;
+  height: 50%;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#internal-box-6{
+  background-color: white;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  width: 35%;
+  height: 35%;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#section-1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#section-2 {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  #section-2 {
+    display: none;
+  }
+  #internal-box{
+    background-image: url('login-img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  #internal-box-2{
+    background-image: url('login-img-2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+#login-form > *, #signup-form > *{
+  margin-bottom: 10px;
+}
+
+#close-btn, #close-btn-2, #close-btn-3, #close-btn-4, #close-btn-5{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+@media (max-width: 767px) {
+  #close-btn, #close-btn-2, #close-btn-3, #close-btn-4, #close-btn-5{
+    top: 5px;
+    right: 5px;
+  }
+}
+
+#user-details{
+  color: white;
+  width: 25%;
+  height: 100%;
+  background-image: url("user-bg.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#todo-list{
+  width: 75%;
+}
+
+#add-btn{
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #ccc;
+  color: black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#form-todo{
+  width: 80%;
+}
+#form-todo > *{
+  margin-bottom: 10px;
+}
+#list-head{
+  text-align: center;
+}
+#show-list{
+  width: 100%;
+  height: 80%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.records, .no-records{
+  width: 90%;
+  background-color: #ccc;
+  margin: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.records:hover{
+  cursor: pointer;
+  width: 85%;
+  margin-left: 20px;
+}
+
+#form-edit{
+  width: 90%;
+}
+#form-edit > *{
+  margin-bottom: 10px;
+  width: 100%;
+}

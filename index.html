@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TO DO App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="bg-img"></div>
+    <figure class="text-end" id="title-bg">
+  <blockquote class="blockquote">
+    <p>Organize Your Day Effortlessly, Empowering Your Productivity.</p>
+  </blockquote>
+  <figcaption class="blockquote-footer">
+    Your Ultimate  <cite title="Source Title">Todo List App</cite>
+  </figcaption>
+</figure>
+    <div class="alert" id="alert-msg" role="alert"></div>
+    <div id="modal-box">
+    <div id="close-btn">X</div>
+      <div id="internal-box">
+      <div id="section-1">
+        <form id="signup-form">
+    <input id="name" type="text" class="form-control" placeholder="Username" aria-label="Username" name="name">
+    <input id="email" type="email" class="form-control" placeholder="Email" aria-label="Username" name="email">
+    <input id="password" type="password" class="form-control" placeholder="Password" aria-label="Username" name="password">
+  <button type="submit" id="submit-btn" class="btn btn-primary">Submit</button>
+</form>
+      </div>
+      <img id="section-2" rel="preload" src="login-img.jpg" class="img-fluid" alt="...">  
+      </div>
+    </div>
+    <div id="modal-box-2">
+    <div id="close-btn-2">X</div>
+      <div id="internal-box-2">
+      <div id="section-1">
+        <form id="login-form">
+    <input id="re_email" type="email" class="form-control" placeholder="Email" aria-label="Username" name="re_email">
+    <input id="re_password" type="password" class="form-control" placeholder="Password" aria-label="Username" name="re_password">
+  <button type="submit" id="re-submit-btn" class="btn btn-primary">Submit</button>
+</form>
+      </div>
+      <img id="section-2" rel="preload" src="login-img-2.jpg" class="img-fluid" alt="...">  
+      </div>
+    </div>
+    <div id="modal-box-3">
+    <div id="close-btn-3">X</div>
+      <div id="internal-box-3">
+      <div id="user-details">
+        <h1 class="display-4"></h1>
+      </div>
+      <div id='todo-list'>
+        <div id="add-btn">+</div>
+        <h3>ADD</h3>
+        <h2 id="list-head">Your list</h2>
+        <div id="show-list"></div>
+      </div>
+      </div>
+    </div>
+    <div id="modal-box-4">
+    <div id="close-btn-4">X</div>
+      <div id="internal-box-4">
+        <form id="form-todo">
+          <input type="date" id="todo_date" name="t_date">
+          <input class="form-control" id="todo-title" type="text" name="t_title" placeholder="Enter work title">
+          <input class="form-control" id="todo-desc" type="text" name="t_desc" placeholder="Enter work description">
+          <input class="btn btn-primary" type="button" id="t_submit" value="save">
+        </form>
+      </div>
+    </div>
+    <div id="modal-box-5">
+    <div id="close-btn-5">X</div>
+      <div id="internal-box-5"></div>
+    </div>
+    <div id="modal-box-6">
+      <div id="internal-box-6">
+        <div id="confirm-msg"></div>
+        <div id='btn-box'>
+          <input id="ok-btn" type="button" class="btn btn-danger" value="Ok">
+        <input id="cancel-btn" type="button" class="btn btn-primary" value="Cancel">
+        </div>
+      </div>
+    </div>
+    <div id="btn">
+      <button type="button" class="btn btn-outline-danger btn-lg" id="login-btn">LogIn</button>
+<button type="button" class="btn btn-outline-warning btn-lg" id="signup-btn">SignUp</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
